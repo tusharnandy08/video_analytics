@@ -1,0 +1,8 @@
+.env
+.videos/
+.DS_Store
+.venv/
+__pycache__/
+*.pyc
+.pipeline_state.json
+last_result.json

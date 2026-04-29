@@ -1,0 +1,39 @@
+[index]   reusing 69f140e36e112d6e4a6d1f28
+[asset]   reusing 69f140ebff82739772cafa8b
+[indexed] reusing 69f1410f6e112d6e4a6d1f32
+[analyze] submitting async task with pegasus1.5
+[analyze] task_id=69f14f99ff82739772cb01e2
+[analyze] status=queued ...
+[analyze] status=processing ...
+[analyze] status=processing ...
+[analyze] status=processing ...
+[analyze] status=processing ...
+[analyze] status=processing ...
+[analyze] status=processing ...
+[analyze] status=processing ...
+[analyze] status=processing ...
+[analyze] status=processing ...
+
+======================================================================
+RESULT  (model=pegasus1.5)
+======================================================================
+Total deliveries identified : 10
+Left-arm bowlers            : 0
+Right-arm bowlers           : 10
+Unknown                     : 0
+
+Summary:
+  All 10 deliveries in the highlights compilation were bowled by right-arm bowlers. Each bowler was observed running in from the left side of the screen and releasing the ball with their right arm.
+
+Per-delivery breakdown:
+  # 1    30.0s –   34.0s  arm=right    Bowler runs in from the left side of the screen and releases the ball with his right arm.
+  # 2    47.0s –   52.0s  arm=right    Bowler runs in from the left side of the screen and releases the ball with his right arm.
+  # 3    73.0s –   77.0s  arm=right    Bowler runs in from the left side of the screen and releases the ball with his right arm.
+  # 4    90.0s –   94.0s  arm=right    Bowler runs in from the left side of the screen and releases the ball with his right arm.
+  # 5   102.0s –  106.0s  arm=right    Bowler runs in from the left side of the screen and releases the ball with his right arm.
+  # 6   121.0s –  125.0s  arm=right    Bowler runs in from the left side of the screen and releases the ball with his right arm.
+  # 7   142.0s –  146.0s  arm=right    Bowler runs in from the left side of the screen and releases the ball with his right arm.
+  # 8   157.0s –  161.0s  arm=right    Bowler runs in from the left side of the screen and releases the ball with his right arm.
+  # 9   170.0s –  174.0s  arm=right    Bowler runs in from the left side of the screen and releases the ball with his right arm.
+  #10   184.0s –  188.0s  arm=right    Bowler runs in from the left side of the screen and releases the ball with his right arm.
+======================================================================

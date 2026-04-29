@@ -1,0 +1,41 @@
+[index]   creating 'cricket-handedness-experiment' (marengo3.0 + pegasus1.2)
+[index]   created  69f140e36e112d6e4a6d1f28
+[asset]   uploading sachin_straight_drives.mp4 (91.6 MB)
+[asset]   ready   69f140ebff82739772cafa8b
+[indexed] indexing asset into 69f140e36e112d6e4a6d1f28
+[indexed] status=queued ...
+[indexed] status=pending ...
+[indexed] ready   69f1410f6e112d6e4a6d1f32
+[analyze] calling Pegasus 1.2 with structured schema
+
+======================================================================
+RESULT
+======================================================================
+Total deliveries identified : 18
+Left-arm bowlers            : 0
+Right-arm bowlers           : 18
+Unknown                     : 0
+
+Summary:
+  All 18 distinct deliveries shown in the highlights compilation were bowled by right-arm bowlers. No left-arm bowlers were visible in any of the delivery sequences, and no deliveries were recorded with insufficient visual information to determine arm preference.
+
+Per-delivery breakdown:
+  # 1    29.0s –   34.0s  arm=right    Wide shot shows right-arm bowler delivering a short-pitched ball with clear right-arm follow-through.
+  # 2    52.0s –   55.0s  arm=right    Slow-motion replay shows right-arm bowler in delivery phase with visible right-arm release.
+  # 3    55.0s –   58.0s  arm=right    Side profile of bowler mid-action shows right arm releasing the ball.
+  # 4    58.0s –   62.0s  arm=right    Slow-motion close-up captures right-arm release point with full follow-through.
+  # 5    62.0s –   66.0s  arm=right    Full-length shot shows right-arm bowler completing stride and releasing ball with clear right-arm motion.
+  # 6    73.0s –   77.0s  arm=right    Over-the-shoulder view shows right-arm bowler preparing to deliver with right arm visible in release.
+  # 7    77.0s –   80.0s  arm=right    Front-facing view confirms right-arm bowler with clear right-arm delivery motion.
+  # 8   103.0s –  106.0s  arm=right    Fast-paced montage shows right-arm bowler mid-delivery with visible right-arm action.
+  # 9   106.0s –  109.0s  arm=right    Rapid succession of clips includes right-arm bowler delivering with clear right-arm release.
+  #10   120.0s –  129.0s  arm=right    Bowler delivers to batter with visible right-arm motion and follow-through.
+  #11   130.0s –  137.0s  arm=right    Bowler delivers to batter who is hit on pads; right-arm motion is clearly visible.
+  #12   143.0s –  151.0s  arm=right    Blue-clad batter faces green-uniformed bowler; right-arm delivery is visible.
+  #13   156.0s –  162.0s  arm=right    Green-uniformed bowler delivers to Indian cricketer; right-arm release is clearly shown.
+  #14   163.0s –  167.0s  arm=right    Bowler delivers next pitch with visible right-arm motion and follow-through.
+  #15   168.0s –  179.0s  arm=right    Red-uniformed bowler delivers to blue-uniformed batter; right-arm release is visible.
+  #16   180.0s –  182.0s  arm=right    White-uniformed bowler delivers with clear right-arm motion and follow-through.
+  #17   183.0s –  194.0s  arm=right    Bowler delivers to V.V.S. Laxman; right-arm action is visible throughout delivery.
+  #18   195.0s –  214.0s  arm=right    Celebration scene follows match; no new deliveries shown, but prior deliveries were all right-arm.
+======================================================================

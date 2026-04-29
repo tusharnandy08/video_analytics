@@ -1,0 +1,79 @@
+{
+  "deliveries": [
+    {
+      "delivery_number": 1,
+      "approximate_start_seconds": 30.0,
+      "approximate_end_seconds": 33.0,
+      "run_up_side": "right",
+      "evidence": "The bowler runs in from the right side of the screen."
+    },
+    {
+      "delivery_number": 2,
+      "approximate_start_seconds": 47.0,
+      "approximate_end_seconds": 51.0,
+      "run_up_side": "right",
+      "evidence": "The bowler runs in from the right side of the screen."
+    },
+    {
+      "delivery_number": 3,
+      "approximate_start_seconds": 73.0,
+      "approximate_end_seconds": 76.0,
+      "run_up_side": "right",
+      "evidence": "The bowler runs in from the right side of the screen."
+    },
+    {
+      "delivery_number": 4,
+      "approximate_start_seconds": 90.0,
+      "approximate_end_seconds": 93.0,
+      "run_up_side": "right",
+      "evidence": "The bowler runs in from the right side of the screen."
+    },
+    {
+      "delivery_number": 5,
+      "approximate_start_seconds": 102.0,
+      "approximate_end_seconds": 105.0,
+      "run_up_side": "right",
+      "evidence": "The bowler runs in from the right side of the screen."
+    },
+    {
+      "delivery_number": 6,
+      "approximate_start_seconds": 121.0,
+      "approximate_end_seconds": 124.0,
+      "run_up_side": "right",
+      "evidence": "The bowler runs in from the right side of the screen."
+    },
+    {
+      "delivery_number": 7,
+      "approximate_start_seconds": 142.0,
+      "approximate_end_seconds": 145.0,
+      "run_up_side": "right",
+      "evidence": "The bowler runs in from the right side of the screen."
+    },
+    {
+      "delivery_number": 8,
+      "approximate_start_seconds": 156.0,
+      "approximate_end_seconds": 159.0,
+      "run_up_side": "right",
+      "evidence": "The bowler runs in from the right side of the screen."
+    },
+    {
+      "delivery_number": 9,
+      "approximate_start_seconds": 170.0,
+      "approximate_end_seconds": 173.0,
+      "run_up_side": "right",
+      "evidence": "The bowler runs in from the right side of the screen."
+    },
+    {
+      "delivery_number": 10,
+      "approximate_start_seconds": 184.0,
+      "approximate_end_seconds": 187.0,
+      "run_up_side": "right",
+      "evidence": "The bowler runs in from the right side of the screen."
+    }
+  ],
+  "left_side_runup_count": 0,
+  "right_side_runup_count": 10,
+  "unknown_count": 0,
+  "total_deliveries": 10,
+  "summary": "All 10 distinct bowling deliveries in the video show the bowler running in from the right side of the screen."
+}
