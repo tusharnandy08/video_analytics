@@ -86,6 +86,62 @@ the screen,"* with the same timestamps. The model is agreeing with
 whichever direction is in the prompt. It is not actually looking at the
 run-up. (And we know there's at least one left-arm bowler in the video.)
 
+### Follow-up: a chain-of-thought probe
+
+Open question after the runs above: is the model **prompt-templating**
+(answer is hallucinated from the prompt, fixable with better prompting)
+or **perceptually blind** to bowling-arm pixels (answer can't be
+recovered no matter how we ask)? CoT prompting separates these.
+
+[cot_bowler_arm.py](cot_bowler_arm.py) reuses the cached asset and
+sends Pegasus 1.5 a schema where the descriptive fields come **before**
+the classification field — LLMs fill JSON in declaration order, so this
+is the actual mechanism that forces describe-first. Prompt is neutral
+(the words "left" and "right" never appear), `temperature=0`, and each
+delivery is asked for:
+
+1. `visible_action` — what is visible during the delivery
+2. `arm_at_release_observation` — what the arms are doing at the
+   instant of release
+3. `bowling_arm` — the classification (only after writing 1 and 2)
+4. `confidence` — self-rated
+
+The diagnostic that mattered:
+
+| Field | Distinct values across 10 deliveries |
+|---|---|
+| `visible_action` | **5/10** — variation tracks kit colour (white / yellow / blue / green / red) |
+| `arm_at_release_observation` | **1/10** — character-for-character identical, every delivery |
+
+All 10 classified as right-arm again. All 10 self-rated `confidence=high`.
+
+That 5-vs-1 split is the cleanest signal we got out of the whole
+experiment. When the property is **genuinely visible** to Pegasus
+(jersey colour), the per-delivery descriptions diverge in lockstep
+with reality. When the property **isn't visible** (release arm), the
+description collapses to one templated sentence emitted regardless of
+frames. The model isn't lossy across the board — it has fine-grained
+access to *some* perceptual properties of the same scene and not
+others. Specifically, what fails is the **mirror-image-paired**
+distinction (left arm vs. right arm), which is a known consequence of
+horizontal-flip data augmentation in vision encoders and lines up with
+the broader VLM literature on left/right confusion.
+
+Two corollaries:
+
+- **CoT didn't help, and we now know why.** It can't — there's no
+  perceptual signal to reason from. Field-order CoT works when the
+  model is reasoning sequentially over evidence; it does nothing when
+  the perception layer never resolved the property in the first place.
+  In fact `visible_action` already contained the phrase *"is
+  right-handed"* before the `bowling_arm` field was reached — the
+  model planned the whole row up front and wrote the answer into the
+  supposedly-descriptive field. CoT-via-schema-ordering is a soft
+  constraint, not a hard one.
+- **Self-rated confidence is unreliable.** All 10 came back `high` on
+  a property the model demonstrably could not see. So even an
+  uncertainty-aware downstream pipeline can't filter this failure out.
+
 ### What this tells us about Pegasus
 
 **The structural claims hold.** JSON validity, schema conformance, sane
@@ -155,6 +211,9 @@ PEGASUS_MODEL=pegasus1.2 .venv/bin/python count_left_handed_bowlers.py
 
 # Prompt-flip probe (reuses the cached asset)
 .venv/bin/python query_runup_side.py
+
+# Chain-of-thought probe (reuses the cached asset)
+.venv/bin/python cot_bowler_arm.py
 ```
 
 State (`index_id`, `asset_id`, `indexed_asset_id`) is cached in
@@ -165,7 +224,8 @@ that file to force a fresh upload.
 
 - [count_left_handed_bowlers.py](count_left_handed_bowlers.py) — main pipeline (1.2 sync / 1.5 async)
 - [query_runup_side.py](query_runup_side.py) — the prompt-flip probe
+- [cot_bowler_arm.py](cot_bowler_arm.py) — chain-of-thought probe (describe-then-classify)
 - [requirements.txt](requirements.txt) — `twelvelabs`, `python-dotenv`
-- `last_result.json`, `last_runup_result.json` — raw model outputs
-- `pipeline_run.log`, `pipeline_run_pegasus15.log` — captured stdout
+- `last_result.json`, `last_runup_result.json`, `last_cot_result.json` — raw model outputs
+- `pipeline_run.log`, `pipeline_run_pegasus15.log`, `pipeline_run_cot.log` — captured stdout
 - `.pipeline_state.json`, `.videos/`, `.env` — gitignored

@@ -1,0 +1,99 @@
+{
+  "deliveries": [
+    {
+      "delivery_number": 1,
+      "approximate_start_seconds": 30.0,
+      "approximate_end_seconds": 34.0,
+      "visible_action": "The bowler is wearing a white uniform and is right-handed. The camera angle is from behind the bowler, showing the full run-up and delivery stride. The release is clearly visible.",
+      "arm_at_release_observation": "The bowler's right arm is raised above the head, and the left arm is at the side. The ball is released from the right hand.",
+      "bowling_arm": "right",
+      "confidence": "high"
+    },
+    {
+      "delivery_number": 2,
+      "approximate_start_seconds": 47.0,
+      "approximate_end_seconds": 52.0,
+      "visible_action": "The bowler is wearing a white uniform and is right-handed. The camera angle is from behind the bowler, showing the full run-up and delivery stride. The release is clearly visible.",
+      "arm_at_release_observation": "The bowler's right arm is raised above the head, and the left arm is at the side. The ball is released from the right hand.",
+      "bowling_arm": "right",
+      "confidence": "high"
+    },
+    {
+      "delivery_number": 3,
+      "approximate_start_seconds": 73.0,
+      "approximate_end_seconds": 77.0,
+      "visible_action": "The bowler is wearing a yellow uniform and is right-handed. The camera angle is from behind the bowler, showing the full run-up and delivery stride. The release is clearly visible.",
+      "arm_at_release_observation": "The bowler's right arm is raised above the head, and the left arm is at the side. The ball is released from the right hand.",
+      "bowling_arm": "right",
+      "confidence": "high"
+    },
+    {
+      "delivery_number": 4,
+      "approximate_start_seconds": 90.0,
+      "approximate_end_seconds": 94.0,
+      "visible_action": "The bowler is wearing a blue uniform and is right-handed. The camera angle is from behind the bowler, showing the full run-up and delivery stride. The release is clearly visible.",
+      "arm_at_release_observation": "The bowler's right arm is raised above the head, and the left arm is at the side. The ball is released from the right hand.",
+      "bowling_arm": "right",
+      "confidence": "high"
+    },
+    {
+      "delivery_number": 5,
+      "approximate_start_seconds": 102.0,
+      "approximate_end_seconds": 106.0,
+      "visible_action": "The bowler is wearing a white uniform and is right-handed. The camera angle is from behind the bowler, showing the full run-up and delivery stride. The release is clearly visible.",
+      "arm_at_release_observation": "The bowler's right arm is raised above the head, and the left arm is at the side. The ball is released from the right hand.",
+      "bowling_arm": "right",
+      "confidence": "high"
+    },
+    {
+      "delivery_number": 6,
+      "approximate_start_seconds": 121.0,
+      "approximate_end_seconds": 125.0,
+      "visible_action": "The bowler is wearing a white uniform and is right-handed. The camera angle is from behind the bowler, showing the full run-up and delivery stride. The release is clearly visible.",
+      "arm_at_release_observation": "The bowler's right arm is raised above the head, and the left arm is at the side. The ball is released from the right hand.",
+      "bowling_arm": "right",
+      "confidence": "high"
+    },
+    {
+      "delivery_number": 7,
+      "approximate_start_seconds": 142.0,
+      "approximate_end_seconds": 146.0,
+      "visible_action": "The bowler is wearing a blue uniform and is right-handed. The camera angle is from behind the bowler, showing the full run-up and delivery stride. The release is clearly visible.",
+      "arm_at_release_observation": "The bowler's right arm is raised above the head, and the left arm is at the side. The ball is released from the right hand.",
+      "bowling_arm": "right",
+      "confidence": "high"
+    },
+    {
+      "delivery_number": 8,
+      "approximate_start_seconds": 156.0,
+      "approximate_end_seconds": 160.0,
+      "visible_action": "The bowler is wearing a green uniform and is right-handed. The camera angle is from behind the bowler, showing the full run-up and delivery stride. The release is clearly visible.",
+      "arm_at_release_observation": "The bowler's right arm is raised above the head, and the left arm is at the side. The ball is released from the right hand.",
+      "bowling_arm": "right",
+      "confidence": "high"
+    },
+    {
+      "delivery_number": 9,
+      "approximate_start_seconds": 170.0,
+      "approximate_end_seconds": 174.0,
+      "visible_action": "The bowler is wearing a red uniform and is right-handed. The camera angle is from behind the bowler, showing the full run-up and delivery stride. The release is clearly visible.",
+      "arm_at_release_observation": "The bowler's right arm is raised above the head, and the left arm is at the side. The ball is released from the right hand.",
+      "bowling_arm": "right",
+      "confidence": "high"
+    },
+    {
+      "delivery_number": 10,
+      "approximate_start_seconds": 184.0,
+      "approximate_end_seconds": 188.0,
+      "visible_action": "The bowler is wearing a green uniform and is right-handed. The camera angle is from behind the bowler, showing the full run-up and delivery stride. The release is clearly visible.",
+      "arm_at_release_observation": "The bowler's right arm is raised above the head, and the left arm is at the side. The ball is released from the right hand.",
+      "bowling_arm": "right",
+      "confidence": "high"
+    }
+  ],
+  "left_arm_count": 0,
+  "right_arm_count": 10,
+  "unknown_count": 0,
+  "total_deliveries": 10,
+  "reasoning_summary": "All 10 deliveries were clearly visible from behind the bowler, showing the full run-up and release. In each case, the right arm was raised above the head and the ball was released from the right hand, confirming right-arm bowling with high confidence."
+}
