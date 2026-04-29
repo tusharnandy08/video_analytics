@@ -1,0 +1,54 @@
+[cot] asset_id=69f140ebff82739772cafa8b, model=pegasus1.5, temperature=0
+[cot] task_id=69f16932e71f7c7b4a22cbbc
+[cot] status=queued ...
+[cot] status=processing ...
+[cot] status=processing ...
+[cot] status=processing ...
+[cot] status=processing ...
+[cot] status=processing ...
+[cot] status=processing ...
+
+========================================================================
+CHAIN-OF-THOUGHT RESULT
+========================================================================
+Total deliveries  : 10
+Left arm          : 0
+Right arm         : 10
+Unknown           : 0
+
+Distinct visible_action strings              : 5/10
+Distinct arm_at_release_observation strings  : 1/10
+
+Summary: All 10 deliveries were clearly visible from behind the bowler, showing the full run-up and release. In each case, the right arm was raised above the head and the ball was released from the right hand, confirming right-arm bowling with high confidence.
+
+# 1    30.0s –   34.0s  arm=right    conf=high
+     visible:  The bowler is wearing a white uniform and is right-handed. The camera angle is from behind the bowler, showing the full run-up and delivery stride. The release is clearly visible.
+     release:  The bowler's right arm is raised above the head, and the left arm is at the side. The ball is released from the right hand.
+# 2    47.0s –   52.0s  arm=right    conf=high
+     visible:  The bowler is wearing a white uniform and is right-handed. The camera angle is from behind the bowler, showing the full run-up and delivery stride. The release is clearly visible.
+     release:  The bowler's right arm is raised above the head, and the left arm is at the side. The ball is released from the right hand.
+# 3    73.0s –   77.0s  arm=right    conf=high
+     visible:  The bowler is wearing a yellow uniform and is right-handed. The camera angle is from behind the bowler, showing the full run-up and delivery stride. The release is clearly visible.
+     release:  The bowler's right arm is raised above the head, and the left arm is at the side. The ball is released from the right hand.
+# 4    90.0s –   94.0s  arm=right    conf=high
+     visible:  The bowler is wearing a blue uniform and is right-handed. The camera angle is from behind the bowler, showing the full run-up and delivery stride. The release is clearly visible.
+     release:  The bowler's right arm is raised above the head, and the left arm is at the side. The ball is released from the right hand.
+# 5   102.0s –  106.0s  arm=right    conf=high
+     visible:  The bowler is wearing a white uniform and is right-handed. The camera angle is from behind the bowler, showing the full run-up and delivery stride. The release is clearly visible.
+     release:  The bowler's right arm is raised above the head, and the left arm is at the side. The ball is released from the right hand.
+# 6   121.0s –  125.0s  arm=right    conf=high
+     visible:  The bowler is wearing a white uniform and is right-handed. The camera angle is from behind the bowler, showing the full run-up and delivery stride. The release is clearly visible.
+     release:  The bowler's right arm is raised above the head, and the left arm is at the side. The ball is released from the right hand.
+# 7   142.0s –  146.0s  arm=right    conf=high
+     visible:  The bowler is wearing a blue uniform and is right-handed. The camera angle is from behind the bowler, showing the full run-up and delivery stride. The release is clearly visible.
+     release:  The bowler's right arm is raised above the head, and the left arm is at the side. The ball is released from the right hand.
+# 8   156.0s –  160.0s  arm=right    conf=high
+     visible:  The bowler is wearing a green uniform and is right-handed. The camera angle is from behind the bowler, showing the full run-up and delivery stride. The release is clearly visible.
+     release:  The bowler's right arm is raised above the head, and the left arm is at the side. The ball is released from the right hand.
+# 9   170.0s –  174.0s  arm=right    conf=high
+     visible:  The bowler is wearing a red uniform and is right-handed. The camera angle is from behind the bowler, showing the full run-up and delivery stride. The release is clearly visible.
+     release:  The bowler's right arm is raised above the head, and the left arm is at the side. The ball is released from the right hand.
+#10   184.0s –  188.0s  arm=right    conf=high
+     visible:  The bowler is wearing a green uniform and is right-handed. The camera angle is from behind the bowler, showing the full run-up and delivery stride. The release is clearly visible.
+     release:  The bowler's right arm is raised above the head, and the left arm is at the side. The ball is released from the right hand.
+========================================================================
